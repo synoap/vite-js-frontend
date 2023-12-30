@@ -7,17 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Landing Page With Vite + Sass</title>
   </head>
   <body>
-    <div class="main">
-      Hello Vite!
-      <div class="box1">With Vite + Sass!</div>
-    </div>
-    <script type="module" src="/main.js"></script>
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="images/logo.svg" alt="Easybank" />
+        </a>
+
+        <a href="#" class="header__menu hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="header__links hide-for-mobile">
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+        <button class="btn header__cta hide-for-mobile"
+          type="button">Request Invite</button>
+      </nav>
+    </header>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
