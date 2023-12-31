@@ -10,17 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/style.css" />
     <title>Landing Page With Vite + Sass</title>
   </head>
   <body>
     <header class="header">
+      <div class="overlay"></div>
+
       <nav class="flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
           <img src="images/logo.svg" alt="Easybank" />
         </a>
 
-        <a href="#" class="header__menu hide-for-desktop">
+        <a id="navToggle" href="#" class="header__menu hide-for-desktop">
           <span></span>
           <span></span>
           <span></span>
@@ -36,6 +38,6 @@
           type="button">Request Invite</button>
       </nav>
     </header>
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

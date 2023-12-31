@@ -1,7 +1,8 @@
 // Variables CSS and Mixins (a ordem importa!!!)
 @import "variables";
 @import "mixins";
-@import "globals";
+@import "animations";
 
 // Components
+@import "globals";
 @import "header";
